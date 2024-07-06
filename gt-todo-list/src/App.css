@@ -1,42 +1,87 @@
-#root {
-  max-width: 1280px;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  
+}
+body{
+  background-color: #000435;
+}
+header{
+  color: #fff;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.form-area{
+  width: 50%;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  
+  
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+form{
+  width: 83%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 5px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+form label{
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+form input{
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 100%;;
+  margin-bottom: 15px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea{
+  min-width: 100%;
+  min-height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+form button{
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: 18px;
+  border: 2px solid #000435;
+  transition: 0.3s ease-in-out;
 }
-
-.card {
-  padding: 2em;
+form button:hover{
+  background-color: #000435;
+  border: 2px solid #FFF;
+  color: #FFF;
 }
-
-.read-the-docs {
-  color: #888;
+.list-item-area{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.list-todo{
+  width: 90%;
+}
+.list-todo li{
+  
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.list-todo li input, .list-todo li label{
+  margin-bottom: 15px;
 }
